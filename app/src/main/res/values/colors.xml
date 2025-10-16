@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/svMainTitle</color>
+
+    <color name="svMainTitle">#7adef0</color>
+    <color name="svMainSubTitle">#FFFFFF91</color>
+    <color name="svNight">#FF000015</color>
+    <color name="svWhite">#FFFFFFFF</color>
+    <color name="svGreyText">#FFaaaaaa</color>
+    <color name="svRed">#FFFB3333</color>
+    <color name="svGreen">#FF6FFD55</color>
+    <color name="svButtonBackground">#FF15A6BF</color>
+
+</resources>

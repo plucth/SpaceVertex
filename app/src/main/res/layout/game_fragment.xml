@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.arnaudguyon.spacevertex.home.HomeActivity">
+
+    <fr.arnaudguyon.spacevertex.hud.DirectionController
+        android:id="@+id/directionController"
+        android:layout_width="@dimen/svControllerSize"
+        android:layout_height="@dimen/svControllerSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/svControllerBorder"
+        android:layout_marginBottom="@dimen/svControllerBorder" />
+
+    <fr.arnaudguyon.spacevertex.hud.FireButton
+        android:id="@+id/fireButton"
+        android:layout_width="@dimen/svControllerSize"
+        android:layout_height="@dimen/svControllerSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/svControllerBorder"
+        android:layout_marginBottom="@dimen/svControllerBorder" />
+
+    <fr.arnaudguyon.spacevertex.hud.BoostButton
+        android:id="@+id/boostButton"
+        android:layout_width="@dimen/svControllerSize"
+        android:layout_height="@dimen/svControllerSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/svControllerBorder"
+        android:layout_marginBottom="@dimen/svControllerBorder" />
+
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topScores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <fr.arnaudguyon.spacevertex.hud.ThreadedTextView
+                android:id="@+id/leftScore"
+                android:layout_width="@dimen/svCounterWidth"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/svMainTitle"
+                android:textSize="@dimen/svScore" />
+
+            <fr.arnaudguyon.spacevertex.hud.ThreadedTextView
+                android:id="@+id/centerScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="100"
+                android:gravity="center_horizontal"
+                android:text="0:00"
+                android:textColor="@color/svWhite"
+                android:textSize="@dimen/svNotice" />
+
+            <fr.arnaudguyon.spacevertex.hud.ThreadedTextView
+                android:id="@+id/rightScore"
+                android:layout_width="@dimen/svCounterWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textColor="@color/svMainTitle"
+                android:textSize="@dimen/svScore" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <fr.arnaudguyon.spacevertex.hud.ThreadedTextView
+            android:id="@+id/noticeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topScores"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:textColor="@color/svMainSubTitle"
+            android:textSize="@dimen/svNotice"
+            tools:text="NOTICE TO THE PLAYER" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="33" />
+
+            <TextView
+                android:id="@+id/quitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/svEndButtonHeight"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/quit_button_background"
+                android:gravity="center"
+                android:minWidth="@dimen/svEndButtonWidth"
+                android:paddingHorizontal="20dp"
+                android:text="@string/quit"
+                android:textColor="@color/svRed"
+                android:textSize="@dimen/svNotice" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="33" />
+
+            <TextView
+                android:id="@+id/restartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/svEndButtonHeight"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/revenge_button_background"
+                android:gravity="center"
+                android:minWidth="@dimen/svEndButtonWidth"
+                android:paddingHorizontal="20dp"
+                android:text="@string/revenge"
+                android:textColor="@color/svGreen"
+                android:textSize="@dimen/svNotice" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="33" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

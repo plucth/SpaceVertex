@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 35
+
+    defaultConfig {
+        applicationId "fr.arnaudguyon.spacevertex"
+        minSdkVersion 21
+        targetSdkVersion 35
+        versionCode 25
+        versionName "1.1.6-25"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "Boolean", "DEBUG_NETWORK", "true"
+        }
+        release {
+            buildConfigField "Boolean", "DEBUG_NETWORK", "false"
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    namespace 'fr.arnaudguyon.spacevertex'
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.2.0'
+    implementation 'androidx.media:media:1.7.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation "org.java-websocket:Java-WebSocket:1.3.0"    // breaking change on later versions
+
+    implementation 'com.github.smart-fun:SmartFonts:1.0.4'
+    implementation 'com.github.smart-fun:Perm:1.2.0'
+}

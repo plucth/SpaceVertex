@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:layout_marginBottom="16dp">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="@dimen/svLoader"
+            android:layout_height="@dimen/svLoader"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="@string/search_players"
+            android:textColor="@color/svWhite"
+            android:textSize="@dimen/svSearch"
+            android:id="@+id/loaderMessageView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/peerListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="150dp"
+        android:orientation="vertical"
+        android:background="@color/svNight"
+        android:layout_weight="0">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifidirect_notice_default"
+        android:id="@+id/noticeView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/svGreyText"
+        android:textSize="@dimen/svNoticeText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+
+</LinearLayout>
+

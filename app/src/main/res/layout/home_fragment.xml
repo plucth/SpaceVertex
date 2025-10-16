@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33" />
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/gametitle"
+        android:textColor="@color/svMainTitle"
+        android:textSize="@dimen/svBigTitle"
+        app:smart_font="@string/fontTrench" />
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/multiplayer"
+        android:textColor="@color/svMainSubTitle"
+        android:textSize="@dimen/svSubTitle"
+        app:smart_font="@string/fontTrench" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33" />
+
+    <Button
+        android:id="@+id/createButton"
+        style="@style/SpaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:text="@string/home_create" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/musicButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:padding="8dp"
+            android:src="@drawable/music_on"
+            android:tint="@color/svButtonBackground" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/joinButton"
+            style="@style/SpaceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="@string/home_join" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0.5" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/soundButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="false"
+            android:alpha="0.5"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_sound_on"
+            android:tint="@color/svButtonBackground" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/wifidirectButton"
+            style="@style/SpaceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/home_wifidirect" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0.5" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33" />
+
+</LinearLayout>

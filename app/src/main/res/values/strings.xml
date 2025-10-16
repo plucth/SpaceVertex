@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Space Vertex Multiplayer</string>
+    <string name="gametitle">Space Vertex</string>
+    <string name="multiplayer">Multiplayer</string>
+	
+    <string name="search_players">Searching for opponents…</string>
+    <string name="play_against_format">Play against %s</string>
+
+    <string name="notice_mouse">ESCAPE AND SURVIVE!</string>
+    <string name="notice_cat">HUNT AND DESTROY!</string>
+    <string name="notice_win">YOU WIN!\n%1$d - %2$d</string>
+    <string name="notice_lose">YOU LOSE!\n%1$d - %2$d</string>
+
+    <string name="err_wrong_network_version">You and your friend are using different versions of the game. Please update to the latest version.”</string>
+    <string name="err_session_full">This game is full — 2 players are already connected.</string>
+    <string name="ok_button">OK</string>
+
+    <string name="home_create">Create Game</string>
+    <string name="home_join">Join Game</string>
+    <string name="home_wifidirect">Direct Connection</string>
+
+    <string name="create_notice">Waiting for your friend to connect…</string>
+    <string name="join_notice">Looking for your friend’s game on the network…</string>
+    <string name="err_wifi_problem">There’s a problem with the Wi-Fi connection.</string>
+    <string name="create_join_notice">Note: you and your friend must be on the same local network.\nIf not, try using Direct Connection instead.</string>
+    <string name="err_p2p">Sorry, Peer-to-Peer (P2P) is not available on your device :/</string>
+    <string name="err_wifi_direct_permission">You need to grant permission to the app.</string>
+
+    <string name="wifidirect_notice_default">Note: you and your friend must be close enough for your devices to connect directly. Wi-Fi Direct may be unstable on some devices.</string>
+    <string name="wifidirect_connecting_to">Connecting to %s</string>
+
+    <string name="quit">QUIT</string>
+    <string name="revenge">REMATCH</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="svBigTitle">60sp</dimen>
+    <dimen name="svSubTitle">40sp</dimen>
+    <dimen name="svSearch">15sp</dimen>
+
+    <dimen name="svScore">30sp</dimen>
+    <dimen name="svNotice">30sp</dimen>
+    <dimen name="svNoticeMargin">64dp</dimen>
+    <dimen name="svHomeButtonMinWidth">300dp</dimen>
+
+    <dimen name="svEndButtonWidth">200dp</dimen>
+    <dimen name="svEndButtonHeight">60dp</dimen>
+
+    <dimen name="svCounterWidth">70dp</dimen>
+    <dimen name="svButtonText">15sp</dimen>
+    <dimen name="svCodeText">30sp</dimen>
+    <dimen name="svWifiDirectWidth">200dp</dimen>
+
+    <dimen name="svMenuText">18sp</dimen>
+    <dimen name="svNoticeText">14sp</dimen>
+    <dimen name="svLoader">20dp</dimen>
+
+    <dimen name="svControllerSize">150dp</dimen>
+    <dimen name="svControllerBorder">30dp</dimen>
+</resources>

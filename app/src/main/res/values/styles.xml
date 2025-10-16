@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+
+    <style name="SpaceButton">
+        <item name="android:background">@drawable/menu_button_background</item>
+        <item name="android:minWidth">@dimen/svHomeButtonMinWidth</item>
+        <item name="android:textColor">@color/svWhite</item>
+        <item name="android:textSize">@dimen/svButtonText</item>
+    </style>
+
+</resources>

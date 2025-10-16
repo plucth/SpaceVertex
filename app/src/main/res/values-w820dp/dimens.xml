@@ -1,0 +1,27 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="svBigTitle">100sp</dimen>
+    <dimen name="svSubTitle">70sp</dimen>
+    <dimen name="svSearch">26sp</dimen>
+
+    <dimen name="svScore">60sp</dimen>
+    <dimen name="svNotice">60sp</dimen>
+    <dimen name="svNoticeMargin">100dp</dimen>
+    <dimen name="svHomeButtonMinWidth">600dp</dimen>
+
+    <dimen name="svEndButtonWidth">320dp</dimen>
+    <dimen name="svEndButtonHeight">120dp</dimen>
+
+    <dimen name="svCounterWidth">140dp</dimen>
+    <dimen name="svButtonText">20sp</dimen>
+    <dimen name="svCodeText">50sp</dimen>
+    <dimen name="svWifiDirectWidth">400dp</dimen>
+    <dimen name="svMenuText">26sp</dimen>
+    <dimen name="svNoticeText">20sp</dimen>
+    <dimen name="svLoader">30dp</dimen>
+
+    <dimen name="svControllerSize">240dp</dimen>
+    <dimen name="svControllerBorder">30dp</dimen>
+</resources>
