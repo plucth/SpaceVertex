@@ -9,8 +9,8 @@ android {
         applicationId "fr.arnaudguyon.spacevertex"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 26
-        versionName "1.1.7-26"
+        versionCode 27
+        versionName "1.1.7-27"
     }
 
     buildTypes {
@@ -27,6 +27,11 @@ android {
     }
 
     namespace 'fr.arnaudguyon.spacevertex'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 configurations.configureEach {
