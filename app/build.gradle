@@ -9,16 +9,18 @@ android {
         applicationId "fr.arnaudguyon.spacevertex"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 25
-        versionName "1.1.6-25"
+        versionCode 26
+        versionName "1.1.7-26"
     }
 
     buildTypes {
         debug {
             buildConfigField "Boolean", "DEBUG_NETWORK", "true"
+            debuggable true
         }
         release {
             buildConfigField "Boolean", "DEBUG_NETWORK", "false"
+            debuggable false
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
