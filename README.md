@@ -17,7 +17,7 @@ Have you ever played a Cat and Mouse game... in space?
 
 - Compatible with Android **5.0 (API 21)** and up
 - Fully updated for Android **15 (API 35)** and ready for future versions 
-- Available on [Google Play](https://play.google.com/store/apps/details?id=fr.arnaudguyon.spacevertex)
+- Available on [Google Play](https://play.google.com/store/apps/details?id=fr.arnaudguyon.spacevertex) and [F-Droid](https://f-droid.org/packages/fr.arnaudguyon.spacevertex)
 
 ## 🚀 Features
 
